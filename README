@@ -1,4 +1,4 @@
-git clone https://github.com/NauSakaguchi/vim ~/
+git https://github.com/NauSakaguchi/dotfiles.vim ~/dotfiles.vim
 
 cd ~/dotfiles.vim
 sh dotfilesLink.sh
