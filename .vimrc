@@ -12,7 +12,6 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 
@@ -37,6 +36,7 @@ syntax on "コードの色分け
 set smartindent "オートインデント
 set mouse=a
 set ttymouse=xterm2
+set cursorline
 
 set number
 
@@ -76,3 +76,5 @@ set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
 set nrformats-=octal
 
 set whichwrap=b,s,[,],<,>
+
+command! SH :w|:sh
