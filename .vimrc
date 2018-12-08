@@ -77,4 +77,5 @@ set nrformats-=octal
 
 set whichwrap=b,s,[,],<,>
 
+"保存してバッシュへ
 command! SH :w|:sh
