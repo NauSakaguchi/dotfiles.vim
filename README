@@ -1,6 +1,9 @@
 git clone https://github.com/NauSakaguchi/dotfiles.vim ~/dotfiles.vim
 
 cd ~/dotfiles.vim
+
+//MacVim or update vim to 8.1 (19/12/2018)
+
 sh dotfilesLink.sh
 
 

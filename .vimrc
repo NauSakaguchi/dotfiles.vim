@@ -1,3 +1,6 @@
+" If installed using git
+set rtp+=~/.fzf
+
 "plug-in manager configuration
 
 set nocompatible              " be iMproved, required
@@ -11,10 +14,14 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-
+Plugin 'valloric/youcompleteme'
+let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/youcompleteme/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+Plugin 'itchyny/lightline.vim'
+Plugin 'junegunn/fzf.vim'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'octol/vim-cpp-enhanced-highlight'
-
+Plugin 'scrooloose/nerdtree'
+Plugin 'drewtempelmeyer/palenight.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -37,6 +44,7 @@ set smartindent "オートインデント
 set mouse=a
 set ttymouse=xterm2
 set cursorline
+set laststatus=2
 
 set number
 
@@ -47,7 +55,8 @@ let &t_te.="\e[0 q"
 
 set guioptions+=a
 
-
+set background=dark
+colorscheme palenight
 "----------------------------------------
 " 検索
 "----------------------------------------
@@ -78,3 +87,6 @@ set nrformats-=octal
 set whichwrap=b,s,[,],<,>
 
 command! SH :w|:sh
+map ; :Files<CR>
+let mapleader = ","
+nmap <leader>ne :NERDTree<cr>
