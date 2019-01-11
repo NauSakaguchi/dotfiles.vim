@@ -22,7 +22,7 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'scrooloose/nerdtree'
 Plugin 'drewtempelmeyer/palenight.vim'
-
+Plugin 'cocopon/iceberg.vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -38,6 +38,15 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this lines
 "
+
+"cpp syntax highlight
+let g:cpp_class_scope_highlight = 1
+let g:cpp_member_variable_highlight = 1
+let g:cpp_class_decl_highlight = 1
+let g:cpp_experimental_simple_template_highlight = 1
+let g:cpp_experimental_template_highlight = 1
+let g:cpp_concepts_highlight = 1
+"let g:cpp_no_function_highlight = 1
 
 syntax on "コードの色分け
 set smartindent "オートインデント
@@ -56,7 +65,8 @@ let &t_te.="\e[0 q"
 set guioptions+=a
 
 set background=dark
-colorscheme palenight
+colorscheme iceberg
+"colorscheme palenight
 "----------------------------------------
 " 検索
 "----------------------------------------

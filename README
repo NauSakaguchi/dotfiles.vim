@@ -6,4 +6,8 @@ cd ~/dotfiles.vim
 
 sh dotfilesLink.sh
 
+//to Install YCM
+cd ~/.vim/bundle/YouCompleteMe
+./install.py --clang-completer
+
 
