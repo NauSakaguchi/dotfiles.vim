@@ -95,6 +95,7 @@ set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
 set nrformats-=octal
 
 set whichwrap=b,s,[,],<,>
+"set wildmenu
 
 command! SH :w|:sh
 map ; :Files<CR>
